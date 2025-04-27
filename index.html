@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Yurii Piasetskyi - QA Engineer</title>
+  <title>Yurii Piasetskyi - Quality Assurance Engineer</title>
   <style>
     body {
       margin: 0;
@@ -14,31 +14,31 @@
 
     .container {
       display: flex;
+      flex-direction: column;
       max-width: 1200px;
-      margin: 50px auto;
+      margin: 0 auto;
       background: #fff;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
       overflow: hidden;
-      flex-direction: column;
     }
 
     .header {
-      background-color: #fff;
-      text-align: center;
-      padding: 40px 20px 20px 20px;
+      text-align: left;
+      padding: 50px 30px 20px 60px;
     }
 
     .header h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 44px;
       color: #2c3e50;
       text-transform: uppercase;
+      white-space: pre-line;
     }
 
     .header h2 {
       margin-top: 10px;
-      font-size: 20px;
+      font-size: 24px;
       color: #2980b9;
       font-weight: normal;
     }
@@ -49,39 +49,48 @@
     }
 
     .sidebar {
-      background-color: #ecf0f1;
+      background-color: #87CEFA;
       width: 300px;
-      padding: 30px 20px;
+      padding: 0;
       box-sizing: border-box;
       text-align: center;
+      display: flex;
+      flex-direction: column;
     }
 
     .sidebar img {
       width: 100%;
-      height: 250px;
+      height: 100%;
       object-fit: cover;
-      display: block;
-      margin-bottom: 30px;
+      flex-grow: 1;
     }
 
-    .sidebar h3 {
-      margin-top: 30px;
+    .sidebar-content {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .sidebar-content h3 {
       font-size: 18px;
       color: #2c3e50;
       border-bottom: 1px solid #bdc3c7;
       padding-bottom: 5px;
-      text-align: left;
+      margin-top: 20px;
     }
 
-    .sidebar ul {
+    .sidebar-content ul {
       list-style: none;
       padding: 0;
-      text-align: left;
     }
 
-    .sidebar ul li {
+    .sidebar-content ul li {
       margin-bottom: 10px;
       font-size: 14px;
+    }
+
+    .sidebar-content a {
+      color: #2980b9;
+      text-decoration: none;
     }
 
     .content {
@@ -138,38 +147,40 @@
 <div class="container">
 
   <div class="header">
-    <h1>Yurii Piasetskyi</h1>
-    <h2>QA Engineer</h2>
+    <h1>    Yurii
+    Piasetskyi</h1>
+    <h2>Quality Assurance Engineer</h2>
   </div>
 
   <div class="main">
 
     <div class="sidebar">
-      <img src="your-photo.JPG" alt="Your Photo">
+      <img src="your-photo.jpg" alt="Your Photo">
+      <div class="sidebar-content">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:yuriipiasetskyi1985@gmail.com">yuriipiasetskyi1985@gmail.com</a></li>
+          <li><a href="tel:0631046161">0631046161</a></li>
+          <li><a href="https://www.linkedin.com/in/yurii-p-6a5255229" target="_blank">LinkedIn Profile</a></li>
+        </ul>
 
-      <h3>Contact</h3>
-      <ul>
-        <li>Email: <a href="mailto:yuriipiasetskyi1985@gmail.com">yuriipiasetskyi1985@gmail.com</a>
-        <li>Mobile: 07493585496</li>
-        <li><a href="https://www.linkedin.com/in/yurii-p-6a5255229" target="_blank">linkedin: www.linkedin.com/in/yurii-p-6a5255229</a></li>
-      </ul>
+        <h3>Skills</h3>
+        <ul>
+          <li>Manual Testing</li>
+          <li>Functional Testing</li>
+          <li>Regression Testing</li>
+          <li>Test Documentation</li>
+          <li>Agile/Scrum Basics</li>
+          <li>Analytical Thinking</li>
+          <li>Attention to Detail</li>
+        </ul>
 
-      <h3>Skills</h3>
-      <ul>
-        <li>Manual Testing</li>
-        <li>Functional Testing</li>
-        <li>Regression Testing</li>
-        <li>Test Documentation</li>
-        <li>Agile/Scrum Basics</li>
-        <li>Analytical Thinking</li>
-        <li>Attention to Detail</li>
-      </ul>
-
-      <h3>Languages</h3>
-      <ul>
-        <li>Ukrainian — Native</li>
-        <li>English — Intermediate/Upper-Intermediate</li>
-      </ul>
+        <h3>Languages</h3>
+        <ul>
+          <li>Ukrainian — Native</li>
+          <li>English — Intermediate/Upper-Intermediate</li>
+        </ul>
+      </div>
     </div>
 
     <div class="content">
@@ -177,7 +188,7 @@
       <div class="section">
         <div class="section-title">About Me</div>
         <div class="about-me">
-          <p>I am a QA Engineer with practical experience in various types of testing and documentation writing. My background in management and finance enhances my analytical thinking and attention to detail.</p>
+          <p>I am a Quality Assurance Engineer with practical experience in various types of testing and documentation writing. My background in management and finance enhances my analytical thinking and attention to detail.</p>
         </div>
       </div>
 
@@ -187,7 +198,7 @@
 
           <div class="experience-item">
             <div>
-              QA Engineer<br>
+              Quality Assurance Engineer<br>
               QALight Outsource · Remote<br>
               July 2024 – Present · Kyiv City, Ukraine
             </div>
