@@ -2,127 +2,186 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yurii Piasetskyi - QA Engineer Resume</title>
+  <title>Yurii Piasetskyi - QA Engineer</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f6f8;
       color: #333;
     }
     .container {
-      max-width: 900px;
-      margin: auto;
-      background-color: #f2f2f2; /* світло-сірий фон */
-      padding: 30px;
+      display: flex;
+      max-width: 1200px;
+      margin: 50px auto;
+      background: #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
       border-radius: 8px;
-      box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
     }
-    .photo {
-      float: right;
-      width: 120px;
-      height: 120px;
-      background-color: #ddd;
-      border-radius: 50%;
+    .sidebar {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      width: 300px;
+      padding: 30px 20px;
+      box-sizing: border-box;
+    }
+    .sidebar img {
+      width: 150px;
+      height: 150px;
       object-fit: cover;
-      margin-left: 20px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+      background-color: #34495e;
     }
-    h1, h2, h3 {
-      color: #0056b3;
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 10px;
     }
-    ul {
-      padding-left: 20px;
+    .sidebar p {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .sidebar h3 {
+      margin-top: 30px;
+      font-size: 18px;
+      border-bottom: 1px solid #7f8c8d;
+      padding-bottom: 5px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .content {
+      flex: 1;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+    .buttons {
+      margin-bottom: 30px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 10px 20px;
+      background-color: #2980b9;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .buttons a:hover {
+      background-color: #1f618d;
+    }
+    .content h1 {
+      margin-top: 0;
+      color: #2c3e50;
     }
     .section {
       margin-bottom: 30px;
     }
-    .contact p {
-      margin: 5px 0;
+    .section h2 {
+      font-size: 22px;
+      color: #2980b9;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 5px;
+    }
+    .section p, .section ul {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .section ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-<div style="text-align: center; margin-bottom: 20px;">
-<img src="IMG_5368.JPG" alt="Фото Юрія" style="width: 150px; height: 150px; border-radius: 50%; display: block; margin: 0 auto;">
-</div>  
-  <img src="photo-placeholder.jpg" alt="Your Photo" class="photo">
+  <div class="sidebar">
+    <img src="your-photo.jpg" alt="Your Photo">
+    <h2>Yurii Piasetskyi</h2>
+    <p>QA Engineer</p>
 
-  <h1>Yurii Piasetskyi</h1>
-  <h3>QA Engineer</h3>
-
-  <div class="section contact">
-    <p><strong>Email: <a href="mailto:yuriipiasetskyi1985@gmail.com">yuriipiasetskyi1985@gmail.com</a>
-    <p><strong>Mobile:</strong> 0631046161</p>
-  </div>
-
-  <div class="section">
-    <h2>About Me</h2>
-    <p>I am a QA Engineer with practical experience in various types of testing and documentation writing. My background in management and finance enhances my analytical thinking and attention to detail.</p>
-  </div>
-
-  <div class="section">
-    <h2>Work Experience</h2>
-
-    <h3>QA Engineer — QALight Outsource</h3>
-    <p><em>July 2024 – Present · 10 mos | Kyiv City, Ukraine · Remote</em></p>
-    <h4>Types of testing applied to projects:</h4>
+    <h3>Contact</h3>
     <ul>
-      <li>Smoke Testing</li>
-      <li>Sanity Testing</li>
-      <li>Retesting</li>
+      <li>Email: yuriipiasetskyi1985@gmail.com</li>
+      <li>Mobile: 07493585496</li>
+    </ul>
+
+    <h3>Skills</h3>
+    <ul>
+      <li>Manual Testing</li>
       <li>Functional Testing</li>
       <li>Regression Testing</li>
-      <li>Usability Testing</li>
-      <li>Performance Testing</li>
-      <li>Localization / Internationalization Testing</li>
-      <li>Compatibility Testing</li>
-      <li>System Testing</li>
-      <li>Integration Testing</li>
-      <li>User Acceptance Testing (UAT)</li>
+      <li>Test Documentation</li>
+      <li>Agile/Scrum Basics</li>
+      <li>Analytical Thinking</li>
+      <li>Attention to Detail</li>
     </ul>
 
-    <h4>Documentation Writing:</h4>
+    <h3>Languages</h3>
     <ul>
-      <li>Test Plans</li>
-      <li>Checklists</li>
-      <li>Test Cases</li>
-      <li>Bug Reports</li>
-      <li>Coverage Matrix</li>
-      <li>Test Summary Reports</li>
-    </ul>
-
-    <h3>Head of Intersport Store Department — EPICENTR Group of Companies</h3>
-    <p><em>December 2015 – October 2023 · 7 yrs 11 mos</em></p>
-    <p><strong>Role (January 2019 – March 2023):</strong></p>
-    <ul>
-      <li>Managed departments in "Intersport" stores across various cities.</li>
-      <li>Opened and successfully operated 3 stores (1000–3300 m²).</li>
-      <li>Led operations, planning, and team development.</li>
-      <li>Boosted KPIs through clear communication and leadership.</li>
-    </ul>
-    <p><strong>Achievements:</strong></p>
-    <ul>
-      <li>2020: Organized the RunUkraine event in Kyiv.</li>
-      <li>2023: Delivered 500,000 units for UNICEF humanitarian project.</li>
+      <li>Ukrainian — Native</li>
+      <li>English — Intermediate/Upper-Intermediate</li>
     </ul>
   </div>
 
-  <div class="section">
-    <h2>Education</h2>
-    <h3>Kyiv Slavic University</h3>
-    <p><em>Specialist Degree (equivalent to Master's) — Finance</em></p>
-    <p><strong>Qualification:</strong> Finance Specialist, Financial Economist</p>
-    <p><em>February 2010 – February 2011</em></p>
-    <ul>
-      <li>Completed a Specialist Degree in Finance with a specialization in Financial Economics.</li>
-      <li>Qualified as a Finance Specialist and Financial Economist.</li>
-      <li>Final grade: Good (according to the Ukrainian grading system).</li>
-    </ul>
-  </div>
+  <div class="content">
+    <div class="buttons">
+      <a href="resume.pdf" download>Download Resume</a>
+      <a href="mailto:yuriipiasetskyi1985@gmail.com">Contact Me</a>
+    </div>
 
+    <h1>About Me</h1>
+    <p>I am a QA Engineer with practical experience in various types of testing and documentation writing. My background in management and finance enhances my analytical thinking and attention to detail.</p>
+
+    <div class="section">
+      <h2>Work Experience</h2>
+
+      <h3>QA Engineer</h3>
+      <p>QALight Outsource · Remote · July 2024 – Present · Kyiv City, Ukraine</p>
+      <ul>
+        <li>Smoke, Sanity, Retesting, Functional, Regression, Usability, Performance, Localization/Internationalization, Compatibility, System, Integration, UAT testing.</li>
+        <li>Writing documentation: Test Plans, Checklists, Test Cases, Bug Reports, Coverage Matrix, Test Summary Reports.</li>
+      </ul>
+
+      <h3>Head of Intersport Store Department</h3>
+      <p>EPICENTR Group of Companies · Full-time · December 2015 – October 2023</p>
+      <ul>
+        <li>Managed departments in "Intersport" stores across various cities.</li>
+        <li>Opened and successfully operated 3 stores (1000–3300 m²).</li>
+        <li>Led operations, planning, and team development.</li>
+        <li>Boosted KPIs through clear communication and leadership.</li>
+        <li>Achievements:
+          <ul>
+            <li>2020: Organized the RunUkraine event in Kyiv.</li>
+            <li>2023: Delivered 500,000 units for UNICEF humanitarian project.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+
+      <h3>Kyiv Slavic University</h3>
+      <p>Specialist Degree (equivalent to Master's) — Finance · February 2010 – February 2011</p>
+      <ul>
+        <li>Qualification: Finance Specialist, Financial Economist.</li>
+        <li>Completed a Specialist Degree in Finance with specialization in Financial Economics.</li>
+        <li>Final grade: Good (according to the Ukrainian grading system).</li>
+      </ul>
+    </div>
+
+  </div>
 </div>
 
 </body>
