@@ -20,6 +20,32 @@
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
       overflow: hidden;
+      flex-direction: column;
+    }
+
+    .header {
+      background-color: #fff;
+      text-align: center;
+      padding: 40px 20px 20px 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #2c3e50;
+      text-transform: uppercase;
+    }
+
+    .header h2 {
+      margin-top: 10px;
+      font-size: 20px;
+      color: #2980b9;
+      font-weight: normal;
+    }
+
+    .main {
+      display: flex;
+      flex: 1;
     }
 
     .sidebar {
@@ -36,18 +62,6 @@
       object-fit: cover;
       display: block;
       margin-bottom: 30px;
-    }
-
-    .sidebar h2 {
-      margin-bottom: 10px;
-      font-size: 24px;
-      color: #2c3e50;
-    }
-
-    .sidebar p {
-      font-size: 14px;
-      margin-bottom: 30px;
-      color: #34495e;
     }
 
     .sidebar h3 {
@@ -77,45 +91,40 @@
     }
 
     .section {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     .section-title {
-      font-size: 24px;
+      font-size: 28px;
       color: #2980b9;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       border-bottom: 2px solid #ecf0f1;
       padding-bottom: 5px;
     }
 
-    .about-me {
-      display: flex;
-      justify-content: space-between;
-      gap: 40px;
-      margin-bottom: 40px;
-    }
-
-    .about-me div {
-      width: 48%;
+    .about-me p {
+      font-size: 18px;
+      line-height: 1.6;
     }
 
     .experience-education {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .experience-item, .education-item {
+      display: flex;
       gap: 40px;
     }
 
-    .experience,
-    .education {
+    .experience-item div:first-child, .education-item div:first-child {
       flex: 1;
-      min-width: 300px;
+      font-weight: bold;
     }
 
-    .experience h3,
-    .education h3 {
-      margin-top: 0;
-      font-size: 20px;
-      color: #2c3e50;
+    .experience-item div:last-child, .education-item div:last-child {
+      flex: 2;
     }
 
     ul {
@@ -126,25 +135,26 @@
 
 <body>
 
-  <div class="container">
+<div class="container">
+
+  <div class="header">
+    <h1>Yurii Piasetskyi</h1>
+    <h2>QA Engineer</h2>
+  </div>
+
+  <div class="main">
 
     <div class="sidebar">
-
       <img src="your-photo.jpg" alt="Your Photo">
 
-      <h2>Yurii Piasetskyi</h2>
-
-      <p>QA Engineer</p>
-
       <h3>Contact</h3>
-
       <ul>
-        <li>Email: yuriipiasetskyi1985@gmail.com</li>
+        <li>Email: <a href="mailto:yuriipiasetskyi1985@gmail.com">yuriipiasetskyi1985@gmail.com</a>
         <li>Mobile: 07493585496</li>
+        <li><a href="https://www.linkedin.com/in/yurii-p-6a5255229" target="_blank">linkedin: www.linkedin.com/in/yurii-p-6a5255229</a></li>
       </ul>
 
       <h3>Skills</h3>
-
       <ul>
         <li>Manual Testing</li>
         <li>Functional Testing</li>
@@ -156,93 +166,91 @@
       </ul>
 
       <h3>Languages</h3>
-
       <ul>
         <li>Ukrainian — Native</li>
         <li>English — Intermediate/Upper-Intermediate</li>
       </ul>
-
     </div>
 
     <div class="content">
 
       <div class="section">
-
         <div class="section-title">About Me</div>
-
         <div class="about-me">
-
-          <div>
-            <p>I am a QA Engineer with practical experience in various types of testing and documentation writing.</p>
-          </div>
-
-          <div>
-            <p>My background in management and finance enhances my analytical thinking and attention to detail.</p>
-          </div>
-
+          <p>I am a QA Engineer with practical experience in various types of testing and documentation writing. My background in management and finance enhances my analytical thinking and attention to detail.</p>
         </div>
-
       </div>
 
       <div class="section">
-
         <div class="section-title">Work Experience</div>
-
         <div class="experience-education">
 
-          <div class="experience">
-
-            <h3>QA Engineer</h3>
-
-            <p>QALight Outsource · Remote · July 2024 – Present · Kyiv City, Ukraine</p>
-
-            <ul>
-              <li>Smoke, Sanity, Retesting, Functional, Regression, Usability, Performance, Localization/Internationalization, Compatibility, System, Integration, UAT testing.</li>
-              <li>Writing documentation: Test Plans, Checklists, Test Cases, Bug Reports, Coverage Matrix, Test Summary Reports.</li>
-            </ul>
-
-            <h3>Head of Intersport Store Department</h3>
-
-            <p>EPICENTR Group of Companies · Full-time · December 2015 – October 2023</p>
-
-            <ul>
-              <li>Managed departments in "Intersport" stores across various cities.</li>
-              <li>Opened and successfully operated 3 stores (1000–3300 m²).</li>
-              <li>Led operations, planning, and team development.</li>
-              <li>Boosted KPIs through clear communication and leadership.</li>
-              <li>Achievements:
-                <ul>
-                  <li>2020: Organized the RunUkraine event in Kyiv.</li>
-                  <li>2023: Delivered 500,000 units for UNICEF humanitarian project.</li>
-                </ul>
-              </li>
-            </ul>
-
+          <div class="experience-item">
+            <div>
+              QA Engineer<br>
+              QALight Outsource · Remote<br>
+              July 2024 – Present · Kyiv City, Ukraine
+            </div>
+            <div>
+              <ul>
+                <li>Smoke, Sanity, Retesting, Functional, Regression, Usability, Performance, Localization/Internationalization, Compatibility, System, Integration, UAT testing.</li>
+                <li>Writing documentation: Test Plans, Checklists, Test Cases, Bug Reports, Coverage Matrix, Test Summary Reports.</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="education">
-
-            <div class="section-title">Education</div>
-
-            <h3>Kyiv Slavic University</h3>
-
-            <p>Specialist Degree (equivalent to Master's) — Finance · February 2010 – February 2011</p>
-
-            <ul>
-              <li>Qualification: Finance Specialist, Financial Economist.</li>
-              <li>Completed a Specialist Degree in Finance with specialization in Financial Economics.</li>
-              <li>Final grade: Good (according to the Ukrainian grading system).</li>
-            </ul>
-
+          <div class="experience-item">
+            <div>
+              Head of Intersport Store Department<br>
+              EPICENTR Group of Companies · Full-time<br>
+              December 2015 – October 2023
+            </div>
+            <div>
+              <ul>
+                <li>Managed departments in "Intersport" stores across various cities.</li>
+                <li>Opened and successfully operated 3 stores (1000–3300 m²).</li>
+                <li>Led operations, planning, and team development.</li>
+                <li>Boosted KPIs through clear communication and leadership.</li>
+                <li>Achievements:
+                  <ul>
+                    <li>2020: Organized the RunUkraine event in Kyiv.</li>
+                    <li>2023: Delivered 500,000 units for UNICEF humanitarian project.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
 
         </div>
+      </div>
 
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="experience-education">
+
+          <div class="education-item">
+            <div>
+              Kyiv Slavic University<br>
+              Specialist Degree (equivalent to Master's)<br>
+              February 2010 – February 2011
+            </div>
+            <div>
+              <ul>
+                <li>Qualification: Finance Specialist, Financial Economist.</li>
+                <li>Completed a Specialist Degree in Finance with specialization in Financial Economics.</li>
+                <li>Final grade: Good (according to the Ukrainian grading system).</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
       </div>
 
     </div>
 
   </div>
+
+</div>
 
 </body>
 
