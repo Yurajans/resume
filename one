@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Yurii Piasetskyi - Quality Assurance Engineer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background-color: #87CEFA;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .sidebar-content {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .sidebar-content h3 {
+      font-size: 18px;
+      color: #2c3e50;
+      border-bottom: 1px solid #bdc3c7;
+      padding-bottom: 5px;
+      margin-top: 20px;
+    }
+
+    .sidebar-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar-content ul li {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .sidebar-content a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+    }
+
+    .header {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .header h1, .header h2 {
+      margin: 0;
+      padding-left: 40px;
+      color: #2c3e50;
+    }
+
+    .header h1 {
+      font-size: 44px;
+      white-space: pre-line;
+    }
+
+    .header h2 {
+      margin-top: 10px;
+      font-size: 24px;
+      color: #2980b9;
+      font-weight: normal;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      color: #2980b9;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 5px;
+    }
+
+    .about-me p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .experience-education {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .experience-item, .education-item {
+      display: flex;
+      gap: 40px;
+    }
+
+    .experience-item div:first-child, .education-item div:first-child {
+      flex: 1;
+      font-weight: bold;
+    }
+
+    .experience-item div:last-child, .education-item div:last-child {
+      flex: 2;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="sidebar">
+    <img src="your-photo.jpg" alt="Your Photo">
+    <div class="sidebar-content">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:yuriipiasetskyi1985@gmail.com">yuriipiasetskyi1985@gmail.com</a></li>
+        <li><a href="tel:0631046161">0631046161</a></li>
+        <li><a href="https://www.linkedin.com/in/yurii-p-6a5255229" target="_blank">LinkedIn Profile</a></li>
+      </ul>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>Manual Testing</li>
+        <li>Functional Testing</li>
+        <li>Regression Testing</li>
+        <li>Test Documentation</li>
+        <li>Agile/Scrum Basics</li>
+        <li>Analytical Thinking</li>
+        <li>Attention to Detail</li>
+      </ul>
+
+      <h3>Languages</h3>
+      <ul>
+        <li>Ukrainian — Native</li>
+        <li>English — Intermediate/Upper-Intermediate</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <h1>    Yurii
+    Piasetskyi</h1>
+      <h2>Quality Assurance Engineer</h2>
+    </div>
+
+    <div class="section">
+      <div class="section-title">About Me</div>
+      <div class="about-me">
+        <p>I am a Quality Assurance Engineer with practical experience in various types of testing and documentation writing. My background in management and finance enhances my analytical thinking and attention to detail.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Work Experience</div>
+      <div class="experience-education">
+
+        <div class="experience-item">
+          <div>
+            Quality Assurance Engineer<br>
+            QALight Outsource · Remote<br>
+            July 2024 – Present · Kyiv City, Ukraine
+          </div>
+          <div>
+            <ul>
+              <li>Smoke, Sanity, Retesting, Functional, Regression, Usability, Performance, Localization/Internationalization, Compatibility, System, Integration, UAT testing.</li>
+              <li>Writing documentation: Test Plans, Checklists, Test Cases, Bug Reports, Coverage Matrix, Test Summary Reports.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div>
+            Head of Intersport Store Department<br>
+            EPICENTR Group of Companies · Full-time<br>
+            December 2015 – October 2023
+          </div>
+          <div>
+            <ul>
+              <li>Managed departments in "Intersport" stores across various cities.</li>
+              <li>Opened and successfully operated 3 stores (1000–3300 m²).</li>
+              <li>Led operations, planning, and team development.</li>
+              <li>Boosted KPIs through clear communication and leadership.</li>
+              <li>Achievements:
+                <ul>
+                  <li>2020: Organized the RunUkraine event in Kyiv.</li>
+                  <li>2023: Delivered 500,000 units for UNICEF humanitarian project.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="experience-education">
+
+        <div class="education-item">
+          <div>
+            Kyiv Slavic University<br>
+            Specialist Degree (equivalent to Master's)<br>
+            February 2010 – February 2011
+          </div>
+          <div>
+            <ul>
+              <li>Qualification: Finance Specialist, Financial Economist.</li>
+              <li>Completed a Specialist Degree in Finance with specialization in Financial Economics.</li>
+              <li>Final grade: Good (according to the Ukrainian grading system).</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>
